@@ -7,7 +7,7 @@ The code below supports simulation from the Ensemble Forecast Operations (EFO) m
 ## Getting started
 ### Dependencies
 Releases of this code are stored in the following Zenodo repository: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7702354.svg)](https://doi.org/10.5281/zenodo.7702354)   
-Larger input data files and results are stored in the following Zenodo repository:   
+Larger input data files and results are stored in the following Zenodo repository: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10453068.svg)](https://doi.org/10.5281/zenodo.10453068)
 The data from these files should be downloaded to the 'inp' and 'results' sub-repos respectively 
 ### Installing
 Requires standard Python modules:

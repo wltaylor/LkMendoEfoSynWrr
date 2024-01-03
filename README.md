@@ -17,18 +17,24 @@ Requires standard Python modules:
 ### Executing program
 The workflow below is configured to run from scripts in the root directory. Simulation scripts can be run in any order after downloading required input data from Zenodo. Downloading 'results' folder from Zenodo gives the results of EFO simulations run during the study which can be used to generate the figures.
 #### EFO model simulation
-
-1) src/data_process.R: Processes raw hydrologic and state variable data for HYMOD 'process' model from .txt files in data repository; outputs to 'data' repo 
-2) src/fit_model_hymod.R: Fits hybrid SWM model to calibration-validation subsets of training data for HYMOD; outputs to 'fit' repo 
-3) src/fit_model_sacsma.R: Fits static SWM model to calibration-validation subsets of training data for SAC-SMA; outputs to 'fit' repo 
+##### Repos
+- ./efo: Repository for EFO model components
+- ./inp: Repository for EFO input files (HEFS or syn-HEFS or syn-GEFS)
+- ./results: Repository for EFO outputs; required for plotting routines
+##### Scripts
+- run_efo_hefs.py: Runs EFO model for the HEFS forecast
+- run_efo_syn_hefs.py: Runs EFO model for the syn-HEFS or syn-GEFS forecast samples
+- run_efo_syn_hefs_prehcst.py: Runs EFO model using syn-HEFS for the pre-hindcast period
+- run_pfo.py: Run EFO model with Perfect Forecast Operations (PFO)
 
 #### Plotting
-- ms: R Script for plotting primary manuscript figures arranged by figure number
-- si: R scripts for plotting supporting information figures arranged by figure number
-- figs: Output repository for generated figures
+- manuscript_figs_exc.py: Plotting routines for main manuscript figures
+- manuscript_figs_hcst.py: Plotting routines for individual hindcast events with synthetic forecasts
+- manuscript_figs_prehcst.py: Plotting routines for individual pre-hindcast events with synthetic forecasts
 
 #### Miscellaneous
 
 #### Contact
-Zach Brodeur, zpb4@cornell.edu
+Zach Brodeur, zpb4@cornell.edu   
+Chris Delaney, chris.delaney@scwa.ca.gov
 

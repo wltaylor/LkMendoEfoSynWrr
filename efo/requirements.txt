@@ -1,0 +1,18 @@
+# This file may be used to create an environment using:
+# $ conda install -c conda-forge --file requirements.txt
+# or
+# $ pip install -r requirements.txt
+# platform: linux-64
+#
+tqdm=4.62.3
+ipywidgets=7.6.5
+distributed=2022.10.0
+dask=2022.10.0
+dask-core=2022.10.0
+dask-jobqueue=0.8.1
+scipy
+h5py
+pandas
+numpy
+matplotlib
+mpl-probscale
